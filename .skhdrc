@@ -1,4 +1,4 @@
-# enter fullscreen ctrle for the focused container
+# enter fullscreen for the focused container
 ctrl - f : chunkc tiling::window --toggle fullscreen
 
 # kill focused window
@@ -9,6 +9,14 @@ ctrl - h : chunkc tiling::window --focus west
 ctrl - j : chunkc tiling::window --focus south
 ctrl - k : chunkc tiling::window --focus north
 ctrl - l : chunkc tiling::window --focus east
+
+# change desktop
+ctrl - 1 : chunkc tiling::desktop -f 1
+ctrl - 2 : chunkc tiling::desktop -f 2
+ctrl - 3 : chunkc tiling::desktop -f 3
+ctrl - 4 : chunkc tiling::desktop -f 4
+ctrl - 5 : chunkc tiling::desktop -f 5
+ctrl - 6 : chunkc tiling::desktop -f 6
 
 # move focused window
 shift + ctrl - h : chunkc tiling::window --warp west
