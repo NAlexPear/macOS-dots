@@ -10,14 +10,6 @@ ctrl - j : chunkc tiling::window --focus south
 ctrl - k : chunkc tiling::window --focus north
 ctrl - l : chunkc tiling::window --focus east
 
-# change monitor focus with desktop
-# ctrl - 1 : chunkc tiling::monitor -f $(chunkc tiling::query --monitor-for-desktop 1)
-# ctrl - 2 : chunkc tiling::monitor -f $(chunkc tiling::query --monitor-for-desktop 2)
-# ctrl - 3 : chunkc tiling::monitor -f $(chunkc tiling::query --monitor-for-desktop 3)
-# ctrl - 4 : chunkc tiling::monitor -f $(chunkc tiling::query --monitor-for-desktop 4)
-# ctrl - 5 : chunkc tiling::monitor -f $(chunkc tiling::query --monitor-for-desktop 5)
-# ctrl - 6 : chunkc tiling::monitor -f $(chunkc tiling::query --monitor-for-desktop 6)
-
 # move focused window
 shift + ctrl - h : chunkc tiling::window --warp west
 shift + ctrl - j : chunkc tiling::window --warp south
