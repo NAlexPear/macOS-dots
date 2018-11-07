@@ -54,6 +54,9 @@ gem install neovim
 # iTerm2
 cp ~/.config/iTerm2/com.googlecode.iterm2.plist ~/Library/Preferences/
 
+# Slack
+cat ~/.config/slack-dark.js >> /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js
+
 # Exit message
 echo -e "\n==========\n"
 echo "Configuration complete! Please restart your terminal"
