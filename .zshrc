@@ -90,9 +90,7 @@ export DEFAULT_USER=alexpearson
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
-export PATH="/usr/local/opt/ruby/bin:/usr/local/opt/ruby:/bin:$HOME/.cargo/bin:$PATH"
-export GEM_HOME="/usr/local/opt/ruby/lib/ruby/gems/2.5.0"
-export GEM_PATH="/usr/local/opt/ruby/lib/ruby/gems/2.5.0"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.5.0/bin:/bin:$HOME/.cargo/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
