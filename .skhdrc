@@ -11,6 +11,8 @@ ctrl - k : chunkc tiling::window --focus north
 ctrl - l : chunkc tiling::window --focus east
 
 # change desktop
+ctrl - p : chunkc tiling::desktop -f prev
+ctrl - n : chunkc tiling::desktop -f next
 ctrl - 1 : chunkc tiling::desktop -f 1
 ctrl - 2 : chunkc tiling::desktop -f 2
 ctrl - 3 : chunkc tiling::desktop -f 3
