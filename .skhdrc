@@ -1,40 +1,40 @@
 # enter fullscreen for the focused container
-ctrl - f : chunkc tiling::window --toggle fullscreen
+alt - f : chunkc tiling::window --toggle fullscreen
 
 # kill focused window
-shift + ctrl - q : chunkc tiling::window --close
+shift + alt - q : chunkc tiling::window --close
 
 # change focus
-ctrl - h : chunkc tiling::window --focus west
-ctrl - j : chunkc tiling::window --focus south
-ctrl - k : chunkc tiling::window --focus north
-ctrl - l : chunkc tiling::window --focus east
+alt - h : chunkc tiling::window --focus west
+alt - j : chunkc tiling::window --focus south
+alt - k : chunkc tiling::window --focus north
+alt - l : chunkc tiling::window --focus east
 
 # change desktop
-ctrl - p : chunkc tiling::desktop -f prev
-ctrl - n : chunkc tiling::desktop -f next
-ctrl - 1 : chunkc tiling::desktop -f 1
-ctrl - 2 : chunkc tiling::desktop -f 2
-ctrl - 3 : chunkc tiling::desktop -f 3
-ctrl - 4 : chunkc tiling::desktop -f 4
-ctrl - 5 : chunkc tiling::desktop -f 5
-ctrl - 6 : chunkc tiling::desktop -f 6
+alt - p : chunkc tiling::desktop -f prev
+alt - n : chunkc tiling::desktop -f next
+alt - 1 : chunkc tiling::desktop -f 1
+alt - 2 : chunkc tiling::desktop -f 2
+alt - 3 : chunkc tiling::desktop -f 3
+alt - 4 : chunkc tiling::desktop -f 4
+alt - 5 : chunkc tiling::desktop -f 5
+alt - 6 : chunkc tiling::desktop -f 6
 
 # move focused window
-shift + ctrl - h : chunkc tiling::window --warp west
-shift + ctrl - j : chunkc tiling::window --warp south
-shift + ctrl - k : chunkc tiling::window --warp north
-shift + ctrl - l : chunkc tiling::window --warp east
+shift + alt - h : chunkc tiling::window --warp west
+shift + alt - j : chunkc tiling::window --warp south
+shift + alt - k : chunkc tiling::window --warp north
+shift + alt - l : chunkc tiling::window --warp east
 
-ctrl - r : chunkc tiling::desktop --rotate 90
+alt - r : chunkc tiling::desktop --rotate 90
 
 # move focused container to workspace
-shift + ctrl - m : chunkc tiling::window --send-to-desktop $(chunkc get _last_active_desktop)
-shift + ctrl - p : chunkc tiling::window --send-to-desktop prev
-shift + ctrl - n : chunkc tiling::window --send-to-desktop next
-shift + ctrl - 1 : chunkc tiling::window --send-to-desktop 1
-shift + ctrl - 2 : chunkc tiling::window --send-to-desktop 2
-shift + ctrl - 3 : chunkc tiling::window --send-to-desktop 3
-shift + ctrl - 4 : chunkc tiling::window --send-to-desktop 4
-shift + ctrl - 5 : chunkc tiling::window --send-to-desktop 5
-shift + ctrl - 6 : chunkc tiling::window --send-to-desktop 6
+shift + alt - m : chunkc tiling::window --send-to-desktop $(chunkc get _last_active_desktop)
+shift + alt - p : chunkc tiling::window --send-to-desktop prev
+shift + alt - n : chunkc tiling::window --send-to-desktop next
+shift + alt - 1 : chunkc tiling::window --send-to-desktop 1
+shift + alt - 2 : chunkc tiling::window --send-to-desktop 2
+shift + alt - 3 : chunkc tiling::window --send-to-desktop 3
+shift + alt - 4 : chunkc tiling::window --send-to-desktop 4
+shift + alt - 5 : chunkc tiling::window --send-to-desktop 5
+shift + alt - 6 : chunkc tiling::window --send-to-desktop 6
