@@ -89,6 +89,8 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gs="git status"
+alias glog="glol --color | emojify | less"
+alias glg="g log --oneline --color | emojify | less"
 alias vim=nvim
 
 export DEFAULT_USER=alexpearson
@@ -103,3 +105,9 @@ export NVM_DIR="$HOME/.nvm"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/apearson/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/apearson/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/apearson/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/apearson/google-cloud-sdk/completion.zsh.inc'; fi

@@ -16,7 +16,7 @@ fi
 
 # forumulae
 brew upgrade
-brew install ruby git fd bat neovim ripgrep htop fzf
+brew install ruby git fd bat neovim ripgrep htop fzf emojify
 brew install koekeishiya/formulae/skhd
 
 # taps
