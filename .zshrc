@@ -56,6 +56,7 @@ plugins=(
   zsh-nvm
   vi-mode
   fzf
+  shrink-path
 )
 
 source $ZSH/oh-my-zsh.sh

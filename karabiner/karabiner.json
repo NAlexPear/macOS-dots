@@ -15,13 +15,14 @@
                 },
                 "rules": [
                     {
-                        "description": "Send Ctrl instead of Cmd signal in iTerm",
+                        "description": "Send Ctrl instead of Cmd signal in Terminal Emulators",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^net\\.kovidgoyal\\.kitty$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
