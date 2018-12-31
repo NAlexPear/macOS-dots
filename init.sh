@@ -19,7 +19,7 @@ fi
 
 # forumulae
 brew upgrade
-brew install ruby git fd bat neovim ripgrep htop fzf emojify httpie z
+brew install ruby git fd bat neovim ripgrep htop fzf emojify httpie z tree
 brew install koekeishiya/formulae/skhd
 
 # taps
