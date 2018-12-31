@@ -9,6 +9,9 @@ fi
 git submodule init
 git submodule update --remote
 
+# fonts (Ligaturized Iosevka)
+curl -L https://github.com/be5invis/Iosevka/files/2300381/iosevka-term-with-fira-code-ligatures.zip | bsdtar -C ~/Library/Fonts -xvf-
+
 # set up homebrew if needed
 if [ ! $(which brew) ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -22,8 +25,6 @@ brew install koekeishiya/formulae/skhd
 # taps
 brew tap crisidev/homebrew-chunkwm
 brew install chunkwm
-brew tap caskroom/fonts
-brew cask install font-iosevka
 
 # services
 brew services start chunkwm
