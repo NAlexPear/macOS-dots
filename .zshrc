@@ -100,7 +100,7 @@ export DEFAULT_USER=alexpearson
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
-export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.5.0/bin:/bin:$HOME/.cargo/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems:/bin:$HOME/.cargo/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -114,3 +114,6 @@ if [ -f '/Users/apearson/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/apears
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/apearson/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/apearson/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Renews VAULT_TOKEN whenever a new shell is opened
+( (vault token renew &> /dev/null &) )
